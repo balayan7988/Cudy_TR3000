@@ -28,7 +28,7 @@ rm -rf feeds/luci/applications/luci-app-passwall
 git clone https://github.com/Openwrt-Passwall/openwrt-passwall2 package/passwall2-luci
 
 # Modify default IP
-# sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 
 # Modify hostname
 sed -i 's/LEDE/iStoreOS/g' package/base-files/files/bin/config_generate
